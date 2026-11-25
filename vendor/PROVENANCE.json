@@ -1,0 +1,96 @@
+{
+  "repository": "https://github.com/YahooArchive/KeyKey",
+  "commit": "81e05f070c070af65cac21e8da28ca4ff2d58905",
+  "files": [
+    {
+      "path": "vendor/OpenVanilla/OVBase.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/OpenVanilla/Headers/OVBase.h",
+      "upstream_sha256": "0a231e5071ff19fab18f1f34d09ff53fcc09973cd6299fc5eda9530495758daa",
+      "license": "MIT"
+    },
+    {
+      "path": "vendor/OpenVanilla/OVBenchmark.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/OpenVanilla/Headers/OVBenchmark.h",
+      "upstream_sha256": "eeba07c4c915f0e9f9d280ad41bfd63d8c7dcfbbc38854597c7c5707798e4150",
+      "license": "MIT"
+    },
+    {
+      "path": "vendor/OpenVanilla/OVUTF8Helper.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/OpenVanilla/Headers/OVUTF8Helper.h",
+      "upstream_sha256": "873e3240cf4d516656a9aee75209c320e6ecd5c4af41e2b390b8716c71798fb8",
+      "license": "MIT"
+    },
+    {
+      "path": "vendor/OpenVanilla/OVStringHelper.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/OpenVanilla/Headers/OVStringHelper.h",
+      "upstream_sha256": "4a7a82b97b0ff7a8ae5bc4fac70d821077e3c967382cd2ef56760c29ec7e894e",
+      "license": "MIT"
+    },
+    {
+      "path": "vendor/OpenVanilla/OVSQLiteWrapper.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/OpenVanilla/Headers/OVSQLiteWrapper.h",
+      "upstream_sha256": "0a5cbf8bfe654eebfddfa28ebda59bc8ee7d65a1e5399e562b7e024eaeb1980f",
+      "license": "MIT"
+    },
+    {
+      "path": "vendor/OpenVanilla/OVDatabaseService.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/OpenVanilla/Headers/OVDatabaseService.h",
+      "upstream_sha256": "9fae441d12a29ff05aa80cbcd182f8dba4b4ef88135e24040e7d10b7d7fe3bf1",
+      "license": "MIT"
+    },
+    {
+      "path": "vendor/Formosa/Mandarin.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/Formosa/Headers/Mandarin.h",
+      "upstream_sha256": "f20bb3b275f25e529822e79841a82a74e0a19fc10dd90537faf6651d848fd2a8",
+      "license": "MIT"
+    },
+    {
+      "path": "vendor/Manjusri/Graph.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/Manjusri/Headers/Graph.h",
+      "upstream_sha256": "b30b0d31dd5f2c8b833ef1a73537a62fcc2b9cecf77be5fa3d5eec95c1b2e1a7",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "vendor/Manjusri/LanguageModel.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/Manjusri/Headers/LanguageModel.h",
+      "upstream_sha256": "d2f8e22ae4444a7d815434957624b7034f1f807abf362d786d7376bac443890d",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "vendor/Manjusri/Node.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/Manjusri/Headers/Node.h",
+      "upstream_sha256": "c9463211671be3c45b18052d910d10b52da10f0d5be88e79baf3d7ab23703fb1",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "vendor/Manjusri/STLDependency.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/Manjusri/Headers/STLDependency.h",
+      "upstream_sha256": "ef44ad8e6f1bc040d29330efd244cfd3088937b92ba168149a1def25b38c753c",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "vendor/Manjusri/StringVectorHelper.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/Manjusri/Headers/StringVectorHelper.h",
+      "upstream_sha256": "02640ef503421bbdb2c016c1b61af30ba6429e7c06b0e5abfe0ece5f250f4ee7",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "vendor/Formosa/Mandarin.cpp",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/Formosa/Source/Mandarin.cpp",
+      "upstream_sha256": "81c61eeb485e9311931fa849bd0b36a4486429f61c46a28813711b24dea9f760",
+      "license": "MIT"
+    },
+    {
+      "path": "vendor/Manjusri/Node.cpp",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/Manjusri/Source/Node.cpp",
+      "upstream_sha256": "a4f94d7b4c7668d556d479dafc5bbb52692e11be7a5b69c28172f61081f5c1d1",
+      "license": "BSD-3-Clause"
+    },
+    {
+      "path": "vendor/OpenVanilla/OVWildcard.h",
+      "upstream_path": "YahooKeyKey-Source-1.1.2528/Frameworks/OpenVanilla/Headers/OVWildcard.h",
+      "upstream_sha256": "f4c8477b2badb221470d3d5d13127d239343dfc2b10cbbfaa1a908f7b4039dca",
+      "license": "MIT"
+    }
+  ]
+}
