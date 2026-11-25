@@ -1,0 +1,7 @@
+LKK includes selected source files from YahooArchive/KeyKey (BSD-3-Clause and MIT). Original file headers are retained; exact provenance is in vendor/PROVENANCE.json.
+
+The public dictionary is generated from McBopomofo data at the commit pinned in Resources/data-sources.json. Copyright (c) 2011-2026 Mengjuei Hsieh et al.; MIT License (Licenses/McBopomofo-MIT.txt). The upstream project documents libtabe (BSD), editorial work, and developer contributions as lexical sources; published frequency data is offered under MIT at https://mcbopomofo.openvanilla.org/textpool.html. The complete libtabe notice is retained in Licenses/libtabe-COPYING.txt (source: https://github.com/kcwu/libtabe/blob/master/COPYING). Raw training corpora are not included.
+
+No historical KeyKey dictionary, CEROD/SEE implementation, or Yahoo branding is included. LKK is an independent project and is not endorsed by Yahoo or upstream contributors.
+
+New LKK code is licensed under BSD-3-Clause. System libraries are not redistributed.

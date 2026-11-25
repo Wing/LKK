@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>LKK 輸入法</string>
+	<key>CFBundleExecutable</key>
+	<string>LKK</string>
+	<key>CFBundleIconFile</key>
+	<string>LKK.icns</string>
+	<key>CFBundleIdentifier</key>
+	<string>io.github.wing.inputmethod.LKK</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>LKK</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.1.0</string>
+	<key>CFBundleVersion</key>
+	<string>0.1.0</string>
+	<key>InputMethodConnectionName</key>
+	<string>LKK_Connection</string>
+	<key>InputMethodServerControllerClass</key>
+	<string>LKKController</string>
+	<key>InputMethodServerDelegateClass</key>
+	<string>LKKController</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>14.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>TICapsLockLanguageSwitchCapable</key>
+	<true/>
+	<key>TISInputSourceID</key>
+	<string>io.github.wing.inputmethod.LKK</string>
+	<key>TISIntendedLanguage</key>
+	<string>zh-Hant</string>
+	<key>TISParticipatesInTouchBar</key>
+	<false/>
+	<key>tsInputMethodCharacterRepertoireKey</key>
+	<array>
+		<string>Hant</string>
+	</array>
+	<key>tsInputMethodIconFileKey</key>
+	<string>LKK.icns</string>
+</dict>
+</plist>
