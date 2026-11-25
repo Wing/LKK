@@ -7,7 +7,8 @@ This repository is a development preview, not a production release.
 - [x] Checksum-pinned public dictionary inputs and source attribution
 - [x] Native ARM64 build and model smoke test
 - [x] Synthetic engine and candidate persistence regression tests
-- [ ] End-to-end TextEdit and browser input tests
+- [x] Manual basic TextEdit composition smoke test
+- [ ] Automated TextEdit and browser input coverage
 - [ ] Multi-application, sleep/wake, multi-display and long-session tests
 - [ ] Legacy key-event compatibility corpus and candidate-quality evaluation
 - [ ] Phrase editor validation and legacy personal-data migration
