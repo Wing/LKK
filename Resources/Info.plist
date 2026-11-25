@@ -10,6 +10,8 @@
 	<string>LKK.icns</string>
 	<key>CFBundleIdentifier</key>
 	<string>io.github.wing.inputmethod.LKK</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>LKK</string>
 	<key>CFBundlePackageType</key>
@@ -22,10 +24,12 @@
 	<string>LKK_Connection</string>
 	<key>InputMethodServerControllerClass</key>
 	<string>LKKController</string>
-	<key>LSBackgroundOnly</key>
-	<true/>
+	<key>InputMethodServerDelegateClass</key>
+	<string>LKKController</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>14.0</string>
+	<key>LSUIElement</key>
+	<true/>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>TICapsLockLanguageSwitchCapable</key>

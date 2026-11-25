@@ -10,8 +10,13 @@ static NSString *UserDirectory() {
     [[NSFileManager defaultManager] createDirectoryAtPath:directory withIntermediateDirectories:YES attributes:@{NSFilePosixPermissions:@0700} error:nil];
     return directory;
 }
+static IMKServer *InputServer;
 static NSString *ModelPath() {return [[NSBundle mainBundle] pathForResource:@"model" ofType:@"db"];}
 static NSString *S(const std::string& value) {return [[NSString alloc] initWithBytes:value.data() length:value.size() encoding:NSUTF8StringEncoding] ?: @"";}
+
+@interface NSObject (LKKKeyboardOverride)
+- (void)overrideKeyboardWithKeyboardNamed:(NSString*)name;
+@end
 
 @interface LKKSettings : NSObject
 @property NSWindow *window;
@@ -67,7 +72,7 @@ static NSString *S(const std::string& value) {return [[NSString alloc] initWithB
  return self;
 }
 - (NSUInteger)recognizedEvents:(id)sender {return NSEventMaskKeyDown;}
-- (void)activateServer:(id)sender {if(self.failure)NSBeep();}
+- (void)activateServer:(id)sender {if([sender respondsToSelector:@selector(overrideKeyboardWithKeyboardNamed:)]){[sender overrideKeyboardWithKeyboardNamed:@"com.apple.keylayout.ABC"];}if(self.failure)NSBeep();}
 - (NSMenu*)menu {
  NSMenu*m=[[NSMenu alloc]initWithTitle:@"LKK"];
  NSMenuItem*i=[[NSMenuItem alloc]initWithTitle:@"LKK 設定…" action:@selector(showSettings:) keyEquivalent:@""];i.target=self;[m addItem:i];return m;
@@ -136,7 +141,11 @@ static NSString *S(const std::string& value) {return [[NSString alloc] initWithB
  y=MAX(NSMinY(visible),MIN(y,NSMaxY(visible)-height));
  [self.candidatePanel setFrame:NSMakeRect(x,y,260,height) display:YES];[self.candidatePanel orderFront:nil];
 }
-- (BOOL)handleEvent:(NSEvent*)event client:(id)client {
+- (BOOL)inputText:(NSString*)string key:(NSInteger)keyCode modifiers:(NSUInteger)flags client:(id)client {
+ NSEvent*event=[NSEvent keyEventWithType:NSEventTypeKeyDown location:NSZeroPoint modifierFlags:flags timestamp:0 windowNumber:0 context:nil characters:string ?: @"" charactersIgnoringModifiers:string ?: @"" isARepeat:NO keyCode:(unsigned short)keyCode];
+ return [self processEvent:event client:client];
+}
+- (BOOL)processEvent:(NSEvent*)event client:(id)client {
  if(event.type!=NSEventTypeKeyDown || !engine)return NO;
  NSString*chars=event.charactersIgnoringModifiers ?: @"";
  unsigned short code=event.keyCode;
@@ -188,9 +197,9 @@ int main(int argc,char**argv){
    }catch(const std::exception&e){std::cerr<<e.what()<<'\n';return 1;}
   }
   [NSApplication sharedApplication];
-  IMKServer*server=[[IMKServer alloc]initWithName:@"LKK_Connection" bundleIdentifier:NSBundle.mainBundle.bundleIdentifier];
-  if(!server)return 1;
-  [NSApp run];(void)server;
+  InputServer=[[IMKServer alloc]initWithName:@"LKK_Connection" bundleIdentifier:NSBundle.mainBundle.bundleIdentifier];
+  if(!InputServer)return 1;
+  [NSApp run];
  }
  return 0;
 }
